@@ -17,7 +17,7 @@
     "@fullcalendar/react": "^6.1.19",
     "@tremor/react": "^3.18.7",
     "firebase": "^12.6.0",
-    "next": "16.0.4",
+    "next": "^16.0.7",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "vlibras-nextjs": "^1.1.2"
