@@ -57,12 +57,12 @@ export default function TaskModal({ task, onClose }: TaskModalProps) {
             <span className="text-sm font-medium text-gray-600">Status:</span>
             <span
               className={`ml-2 px-2 py-0.5 rounded-full text-xs font-medium ${
-                task.completed
+                task.status === 'done'
                   ? 'bg-green-100 text-green-800'
                   : 'bg-gray-100 text-gray-800'
               }`}
             >
-              {task.completed ? 'Concluída' : 'Pendente'}
+              {task.status === 'done' ? 'Concluída' : 'Pendente'}
             </span>
           </div>
 

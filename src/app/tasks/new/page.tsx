@@ -60,7 +60,7 @@ export default function NewTaskPage() {
       description: description.trim(),
       dueDate: dueDate ? new Date(dueDate) : null,
       priority,
-      completed: false,
+      status: 'todo' as const,
       subtasks: subtasks
         .filter(st => st.title.trim() !== '')
         .map(st => ({
@@ -83,7 +83,6 @@ export default function NewTaskPage() {
 
   return (
     <>
-      <Header />
       <div className="min-h-screen flex items-center justify-center bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div>

@@ -45,7 +45,6 @@ export default function KanbanPage() {
 
   return (
     <>
-      <Header />
       <main className="p-4 sm:p-6 bg-gray-50 min-h-screen">
         <div className="max-w-7xl mx-auto">
           <div className="mb-6">

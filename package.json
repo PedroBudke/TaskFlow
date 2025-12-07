@@ -19,7 +19,8 @@
     "firebase": "^12.6.0",
     "next": "16.0.4",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "vlibras-nextjs": "^1.1.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -25,38 +25,36 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* === FullCalendar === */
+
 .fc .fc-toolbar-title {
-  color: #111827 !important; /* gray-900 */
+  color: #111827 !important;
   font-weight: 700 !important;
   font-size: 1.25rem !important;
 }
 
-/* Cabeçalho dos dias da semana (dom, seg, ter...) */
 .fc .fc-day-header {
-  color: #1f2937 !important; /* gray-800 */
-  background-color: #f9fafb !important; /* gray-50 */
+  color: #1f2937 !important;
+  background-color: #f9fafb !important;
   font-weight: 600 !important;
   padding: 8px 0 !important;
   border-bottom: 1px solid #e5e7eb !important;
 }
 
-/* Números dos dias (ex: 1, 2, 3...) */
 .fc .fc-daygrid-day-number {
-  color: #111827 !important; /* gray-900 */
+  color: #111827 !important;
   font-weight: 500 !important;
   font-size: 0.875rem !important;
   padding: 4px 0 !important;
 }
 
-/* Células do calendário (fundos) */
 .fc .fc-daygrid-day {
-  background-color: #ffffff !important; /* branco puro */
-  border: 1px solid #e5e7eb !important; /* borda cinza clara */
+  background-color: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
 }
 
-/* Botões de navegação (today, < >) */
 .fc .fc-button {
-  background-color: #1f2937 !important; /* gray-800 */
+  background-color: #1f2937 !important;
   border-color: #1f2937 !important;
   color: white !important;
   font-weight: 500 !important;
@@ -65,11 +63,168 @@ body {
 }
 
 .fc .fc-button:hover {
-  background-color: #374151 !important; /* gray-700 */
+  background-color: #374151 !important;
   border-color: #374151 !important;
 }
 
 .fc .fc-button:active {
-  background-color: #4b5563 !important; /* gray-600 */
+  background-color: #4b5563 !important;
   border-color: #4b5563 !important;
+}
+
+/* === Acessibilidade: Temas === */
+
+/* Foco visível para navegação por teclado */
+*:focus-visible {
+  outline: 2px solid #4f46e5 !important;
+  outline-offset: 2px;
+}
+
+/* === Tema Padrão (fallback seguro) === */
+body.a11y-theme-default,
+body:not(.a11y-theme-high-contrast):not(.a11y-theme-large-text) {
+  background-color: #ffffff !important;
+  color: #171717 !important;
+}
+
+/* === Tema Alto Contraste === */
+body.a11y-theme-high-contrast {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Fundos claros → escuros */
+body.a11y-theme-high-contrast .bg-white,
+body.a11y-theme-high-contrast .bg-gray-50,
+body.a11y-theme-high-contrast .bg-indigo-50,
+body.a11y-theme-high-contrast .bg-blue-50,
+body.a11y-theme-high-contrast .bg-yellow-50,
+body.a11y-theme-high-contrast .bg-red-50,
+body.a11y-theme-high-contrast .bg-green-50 {
+  background-color: #111111 !important;
+}
+
+/* Textos → branco */
+body.a11y-theme-high-contrast .text-gray-500,
+body.a11y-theme-high-contrast .text-gray-600,
+body.a11y-theme-high-contrast .text-gray-700,
+body.a11y-theme-high-contrast .text-gray-800,
+body.a11y-theme-high-contrast .text-gray-900,
+body.a11y-theme-high-contrast .text-black {
+  color: #ffffff !important;
+}
+
+/* Cores de destaque → amarelo */
+body.a11y-theme-high-contrast .text-indigo-600,
+body.a11y-theme-high-contrast .text-blue-600,
+body.a11y-theme-high-contrast .text-green-600,
+body.a11y-theme-high-contrast .text-red-600,
+body.a11y-theme-high-contrast .text-yellow-600 {
+  color: #ffcc00 !important;
+}
+
+/* Bordas → cinza escuro */
+body.a11y-theme-high-contrast .border-gray-200,
+body.a11y-theme-high-contrast .border-gray-300 {
+  border-color: #444444 !important;
+}
+
+/* Links e botões */
+body.a11y-theme-high-contrast a,
+body.a11y-theme-high-contrast button {
+  color: #ffcc00 !important;
+}
+
+/* Hover em elementos interativos */
+body.a11y-theme-high-contrast button:hover,
+body.a11y-theme-high-contrast a:hover,
+body.a11y-theme-high-contrast .rounded-md:hover,
+body.a11y-theme-high-contrast .rounded-lg:hover,
+body.a11y-theme-high-contrast .p-2:hover,
+body.a11y-theme-high-contrast .p-3:hover {
+  background-color: #222222 !important;
+  color: #ffcc00 !important;
+}
+
+/* === Página Inicial: HeroSection === */
+/* Aplicamos as classes genéricas usadas na HeroSection */
+
+body.a11y-theme-high-contrast .hero-section-bg {
+  background-color: #000 !important;
+}
+
+body.a11y-theme-high-contrast .hero-text-primary {
+  color: #ffffff !important;
+}
+
+body.a11y-theme-high-contrast .hero-text-highlight {
+  color: #ffcc00 !important;
+}
+
+body.a11y-theme-high-contrast .hero-text-secondary {
+  color: #cccccc !important;
+}
+
+body.a11y-theme-high-contrast .hero-button {
+  background-color: #ffcc00 !important;
+  color: #000 !important;
+  border-color: #ffcc00 !important;
+}
+
+body.a11y-theme-high-contrast .hero-button:hover {
+  background-color: #ffdd44 !important;
+  color: #000 !important;
+}
+
+body.a11y-theme-high-contrast .hero-button:focus {
+  outline: 2px solid #ffcc00 !important;
+  outline-offset: 2px !important;
+}
+
+/* === Tema Fonte Ampliada === */
+body.a11y-theme-large-text {
+  font-size: 1.25rem !important;
+}
+
+body.a11y-theme-large-text * {
+  font-size: inherit !important;
+}
+
+/* === Tema Fonte Ampliada (deve seguir o visual padrão) === */
+body.a11y-theme-large-text {
+  background-color: #ffffff !important;
+  color: #171717 !important;
+  font-size: 1.25rem !important;
+}
+
+/* Elementos da HeroSection no modo Fonte Ampliada */
+body.a11y-theme-large-text .hero-section-bg {
+  background: linear-gradient(to bottom right, #f0f4ff, #ffffff) !important;
+}
+
+body.a11y-theme-large-text .hero-text-primary {
+  color: #171717 !important;
+}
+
+body.a11y-theme-large-text .hero-text-highlight {
+  color: #4f46e5 !important; /* indigo-600 */
+}
+
+body.a11y-theme-large-text .hero-text-secondary {
+  color: #6b7280 !important; /* gray-500 */
+}
+
+body.a11y-theme-large-text .hero-button {
+  background-color: #4f46e5 !important;
+  color: #ffffff !important;
+  border-color: #4f46e5 !important;
+}
+
+body.a11y-theme-large-text .hero-button:hover {
+  background-color: #4338ca !important; /* indigo-700 */
+}
+
+/* Mantém fonte maior em todos os elementos */
+body.a11y-theme-large-text * {
+  font-size: inherit !important;
 }
