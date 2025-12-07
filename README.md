@@ -1,5 +1,7 @@
 🚀 TaskFlow – Gerenciador de Tarefas Acessível
 
+Desenvolvido por: Juan Pablo Krüger. Manoela Pinto Guedes e Pedro Herique Budke - Ambos da turma de ADS 2024/N1 - Do UniSENAI de Blumenau.
+
 Uma ferramenta simples, rápida e sempre sincronizada para organizar seu dia com foco e clareza.
 
 🎯 Visão Geral da Arquitetura
